@@ -1,9 +1,12 @@
 #include <iostream>
 
+#include "Environnement.h"
+
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+    Environnement* foret = new Environnement();
+    foret->Display();
+    delete foret;
 }

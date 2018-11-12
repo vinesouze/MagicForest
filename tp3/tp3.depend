@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1541983314 source:c:\users\junior\documents\magicforest\tp3\main.cpp
+	<iostream>
+	"Environnement.h"
+
+1541967994 source:c:\users\junior\documents\magicforest\tp3\agent.cpp
+
+1541982181 source:c:\users\junior\documents\magicforest\tp3\cell.cpp
+	"Cell.h"
+
+1541981862 c:\users\junior\documents\magicforest\tp3\cell.h
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<string>
+	<vector>
+
+1541967793 source:c:\users\junior\documents\magicforest\tp3\effector.cpp
+
+1541983281 source:c:\users\junior\documents\magicforest\tp3\environnement.cpp
+	"Environnement.h"
+
+1541983601 c:\users\junior\documents\magicforest\tp3\environnement.h
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<time.h>
+	<string>
+	<vector>
+	"Cell.h"
+
+1541967754 source:c:\users\junior\documents\magicforest\tp3\sensor.cpp
+	"Sensor.h"
+
+1541967734 c:\users\junior\documents\magicforest\tp3\sensor.h
+	"Environnement.h"
+

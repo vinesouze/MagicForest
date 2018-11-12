@@ -7,14 +7,18 @@
 #include <string>
 #include <vector>
 
-enum State {Vent, Crevasse, Crotte, Monstre, Vide, Inconnu};
+using namespace std;
+
+enum State {Vent, Hole, Crotte, Monster, Vide, Portail};
 
 class Cell {
 	State state;
+	bool inconnu;
 public:
-	Cell(State name) : state(name) {};
 	void setState(State name);
 	State getState();
+	bool decouverte();
+	void setInconnu(bool statut);
 };
 
 
