@@ -4,13 +4,19 @@
 #include "Sensor.h"
 #include "Effector.h"
 
+class Sensor;
+class Effector;
+
 class Agent {
-	Effector effector;
-	Sensor sensor;
-	vector<vector<Cell> > beliefs;
+	Effector* effector;
+	Sensor* sensor;
+	//vector<vector<Cell> > beliefs;
 	int position;
 public:
-	Agent(Effector effect, Sensor sens) : effector(effect), sensor(sens) {};
+    //Agent();
+	Agent(Effector* effect, Sensor* sens) : effector(effect), sensor(sens) {};
+	Effector* getEffector();
+	Sensor* getSensor();
 };
 
 

@@ -8,8 +8,11 @@
 #include <string>
 #include <vector>
 #include "Cell.h"
+#include "Agent.h"
 
 using namespace std;
+
+class Agent;
 
 struct Position {
 	int x = 0;
@@ -27,6 +30,8 @@ public:
 	void addState(int i, int j, int level, State state);
 	void Display();
 	Cell& getCell(int i, int j);
+	vector<vector<Cell> > getForest();
+	Position getAgentPosition();
 };
 
 

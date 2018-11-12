@@ -100,11 +100,21 @@ Environnement::Environnement() {
 void Environnement::updateForestLevel() {
 	level++;
 	forest.clear();
+    agentPosition.x = 0;
+	agentPosition.y = 0;
 	generateForest();
 };
 
 Cell& Environnement::getCell(int i, int j) {
     return forest[i][j];
+}
+
+vector<vector<Cell> > Environnement::getForest() {
+	return forest;
+}
+
+Position Environnement::getAgentPosition() {
+    return agentPosition;
 }
 
 void Environnement::generateForest() {
@@ -124,14 +134,12 @@ void Environnement::generateForest() {
 	int random = RandomNumber(level);
 	int i = random / level;
 	int j = random % level;
-	cout << "i est : " << i << " et j est : " << j << endl;
+	cout << endl << "Le portail est situe en " << i << " et " << j << endl;
 	getCell(i,j).setState(State::Portail);
 
 	// ---- Position aléatoire des monstres et crevasses
 	int nbMonster = level-2;
-	int nbHole = level / 2;
-	cout << "nb de hole " << nbHole << endl;
-    cout << "nb de monster " << nbHole << endl;
+	int nbHole = (level / 2) -1;
 
 	int countMonster = 0;
 	int countHole = 0;
@@ -170,29 +178,45 @@ void Environnement::generateForest() {
 
 void Environnement::Display() {
 	State state;
+    cout << endl << " ############ ";
+	cout << endl << " _";
+	for (int i=0; i < level; i++) {
+        cout <<"__";
+	}
+	cout << endl;
 	for (int i = 0; i < level; i++) {
+        cout << " |";
 		for (int j = 0; j < level; j++) {
-			state = forest[i][j].getState();
-			switch(state) {
-				case Vent:
-					cout << "V ";
-					break;
-				case Crotte:
-					cout << "C ";
-					break;
-				case Monster:
-					cout << "M ";
-					break;
-				case Hole:
-					cout << "T ";
-					break;
-				case Portail:
-					cout << "P ";
-					break;
-				default:
-					cout << "  ";
-			}
+            if (agentPosition.x == i && agentPosition.y == j)
+                cout << "A|";
+            else {
+                state = forest[i][j].getState();
+                switch(state) {
+                    case Vent:
+                        cout << "V|";
+                        break;
+                    case Crotte:
+                        cout << "C|";
+                        break;
+                    case Monster:
+                        cout << "M|";
+                        break;
+                    case Hole:
+                        cout << "T|";
+                        break;
+                    case Portail:
+                        cout << "P|";
+                        break;
+                    default:
+                        cout << " |";
+                }
+            }
 		}
 		cout << endl;
 	}
+	cout << " -";
+    for (int i=0; i < level; i++) {
+        cout <<"--";
+	}
+	cout << endl << " ############ " << endl;
 }

@@ -3,11 +3,15 @@
 
 #include "Environnement.h"
 
-class Sensor {
-	Environnement environnement;
-public:
-	
-};
+class Environnement;
+struct Position;
 
+class Sensor {
+	Environnement* environnement;
+public:
+    Sensor(Environnement* env) : environnement(env) {};
+    vector<vector<Cell> > data();
+    Position getPosition();
+};
 
 #endif // SENSOR_H_INCLUDED
