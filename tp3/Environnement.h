@@ -32,6 +32,7 @@ public:
 	Cell& getCell(int i, int j);
 	vector<vector<Cell> > getForest();
 	Position getAgentPosition();
+	void setAgentPosition(Position pos);
 };
 
 

@@ -10,9 +10,7 @@ class Effector {
 	Environnement* environnement;
 public :
 	Effector(Environnement* env) : environnement(env) {};
-	void move(Action name);
-	void shoot();
-	void exit();
+	void doAction(Action name);
 };
 
 

@@ -32,6 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Agent.cpp" />
+		<Unit filename="Agent.h" />
+		<Unit filename="Cell.cpp" />
+		<Unit filename="Cell.h" />
+		<Unit filename="Effector.cpp" />
+		<Unit filename="Effector.h" />
+		<Unit filename="Environnement.cpp" />
+		<Unit filename="Environnement.h" />
+		<Unit filename="Sensor.cpp" />
+		<Unit filename="Sensor.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

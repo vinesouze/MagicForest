@@ -12,6 +12,9 @@ public:
     Sensor(Environnement* env) : environnement(env) {};
     vector<vector<Cell> > data();
     Position getPosition();
+    bool is_shinny();
+    bool is_windy();
+    bool is_stinky();
 };
 
 #endif // SENSOR_H_INCLUDED
