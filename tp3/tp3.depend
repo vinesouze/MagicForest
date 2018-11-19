@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1542081497 source:c:\users\junior\documents\magicforest\tp3\main.cpp
+1542085153 source:c:\users\junior\documents\magicforest\tp3\main.cpp
 	<iostream>
 	"Environnement.h"
 	"Agent.h"
@@ -44,5 +44,11 @@
 	"Effector.h"
 
 1542069304 c:\users\junior\documents\magicforest\tp3\effector.h
+	"Environnement.h"
+
+1542236174 source:c:\users\junior\documents\magicforest\tp3\knowledgebase.cpp
+	"KnowledgeBase.h"
+
+1542236151 c:\users\junior\documents\magicforest\tp3\knowledgebase.h
 	"Environnement.h"
 

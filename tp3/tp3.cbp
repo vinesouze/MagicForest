@@ -40,6 +40,8 @@
 		<Unit filename="Effector.h" />
 		<Unit filename="Environnement.cpp" />
 		<Unit filename="Environnement.h" />
+		<Unit filename="KnowledgeBase.cpp" />
+		<Unit filename="KnowledgeBase.h" />
 		<Unit filename="Sensor.cpp" />
 		<Unit filename="Sensor.h" />
 		<Unit filename="main.cpp" />

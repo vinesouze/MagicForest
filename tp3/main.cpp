@@ -9,12 +9,12 @@ class Agent;
 
 void commande() {
     cout << "Quelle action souhaitez vous faire ?" << endl;
-    cout << "Z - Haut" << endl;
-    cout << "Q - Gauche" << endl;
-    cout << "S - Bas" << endl;
-    cout << "Z - Droite" << endl;
-    cout << "E - Exit" << endl;
-    cout << "T - Shoot" << endl << endl;
+    cout << "z - Haut" << endl;
+    cout << "q - Gauche" << endl;
+    cout << "s - Bas" << endl;
+    cout << "d - Droite" << endl;
+    cout << "e - Exit" << endl;
+    cout << "t - Shoot" << endl << endl;
 }
 
 Action convertirAction(char touche) {
