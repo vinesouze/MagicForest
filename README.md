@@ -1,6 +1,6 @@
 # MagicForest
 
-Lainé Vincent LAIVO2O19606
+Lainé Vincent LAIV02019606; 
 Sène Jean SENJ06119508
 
 ## Présentation
