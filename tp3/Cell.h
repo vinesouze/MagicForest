@@ -9,7 +9,7 @@
 
 using namespace std;
 
-enum State {Vent, Hole, Crotte, Monster, Vide, Portail};
+enum State {Vent, Hole, Crotte, Monster, Vide, Portail, Inconnu};
 
 class Cell {
 	State state;

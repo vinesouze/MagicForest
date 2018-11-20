@@ -9,15 +9,11 @@
 #include <vector>
 #include "Cell.h"
 #include "Agent.h"
+#include "Position.h"
 
 using namespace std;
 
 class Agent;
-
-struct Position {
-	int x = 0;
-	int y = 0;
-};
 
 class Environnement {
     Position agentPosition;

@@ -3,9 +3,13 @@
 
 #include "Sensor.h"
 #include "Effector.h"
+#include "KnowledgeBase.h"
+#include "RuleBase.h"
 
 class Sensor;
 class Effector;
+class KnowledgeBase;
+class RuleBase;
 
 class Agent {
 	Effector* effector;
@@ -13,6 +17,10 @@ class Agent {
 	//vector<vector<Cell> > beliefs;
 	bool dead;
 	int NbTir;
+	KnowledgeBase* beliefs;
+	RuleBase* rule_base;
+	vector<string> intentions;
+
 public:
     //Agent();
 	Agent(Effector* effect, Sensor* sens,int shoot) : effector(effect), sensor(sens), NbTir(shoot), dead(false) {
@@ -24,6 +32,9 @@ public:
 	void setDead(bool statut);
 	int getNbTir();
 	void tirer();
+	void update_state();
+	KnowledgeBase* getBelief();
+	RuleBase* getRuleBase();
 };
 
 
